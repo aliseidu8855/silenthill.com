@@ -1,0 +1,98 @@
+/* Programs.css */
+
+.p-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.p-header p {
+  font-size: 1.25rem;
+  color: #8b0000;
+  font-weight: 600;
+}
+
+.p-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8b0000;
+}
+
+.p-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .p-cards {
+    flex-direction: row;
+  }
+}
+
+.p-card {
+  background: #e0c999;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.p-card:hover {
+  transform: translateY(-5px);
+}
+
+.p-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #8b0000;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desc li {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  background: #8b0000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+  background: #e0c999;
+  color: #8b0000;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #e0c999;
+  border-radius: 0 0.5rem 0 0.5rem;
+}
+
+.go-arrow {
+  color: #8b0000;
+  font-size: 1.25rem;
+}

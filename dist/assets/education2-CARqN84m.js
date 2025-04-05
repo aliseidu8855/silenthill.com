@@ -1,0 +1,1 @@
+const s="/assets/hero11-Ckt-HDPe.webp",a="/assets/air_ambulance-BXxghKZq.webp",e="/assets/health3-CJqYFjKh.webp",t="/assets/climate-DcMjDF5D.webp",c="/assets/education2-COiWnzBq.webp";export{a as A,t as C,s as E,e as H,c as a};

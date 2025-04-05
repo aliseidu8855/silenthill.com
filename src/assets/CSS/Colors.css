@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #e0c999; /* Gold */
+    --secondary-color: #8b0000; /* Dark Red */
+    --accent-color: #e0c999; /* Gold */
+    --background-color: #ffffff; /* White */
+    --header-background-color: #8b0000; /* Dark Red */
+    --primary-text-color: #8b0000; /* Dark Red */
+    --secondary-text-color: #e0c999; /* Gold */
+    --link-color: #e0c999; /* Gold */
+    --link-hover-color: #8b0000; /* Dark Red */
+    --purple-color: #8b0000; /* Dark Red */
+    --purple-hover-color: #e0c999; /* Gold */
+}

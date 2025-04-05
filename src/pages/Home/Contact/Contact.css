@@ -1,0 +1,103 @@
+/* Contact.css */
+  
+  
+  .contact-col {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-col h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8b0000;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact-col p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-col ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-col ul li .Icons {
+    color: #8b0000;
+  }
+  
+  .contact-col form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-col form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5568;
+  }
+  
+  .contact-col form input,
+  .contact-col form textarea {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .contact-col form input:focus,
+  .contact-col form textarea:focus {
+    border-color: #8b0000;
+  }
+  
+  .contact-col form textarea {
+    resize: vertical;
+  }
+  
+  .contact-col form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #8b0000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .contact-col form button:hover {
+    background: #e0c999;
+    color: #8b0000;
+  }
+  
+  .contact-col form button .Send {
+    font-size: 1.25rem;
+  }
+  
+  .contact-col span {
+    font-size: 1rem;
+    color: #8b0000;
+    margin-top: 1rem;
+  }

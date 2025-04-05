@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    @apply w-full;
+    font-family: "Outfit", sans-serif;
+    background: #e0c999;
+    color: var(--primary-text-color);
+}
+
+.fade-in-bottom-normal {
+    opacity: 0;
+    transform: translateY(40px); /* Start slightly below */
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform; /* Optimize for performance */
+  }
+  
+  .fade-in-bottom-normal.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .fade-in-bottom-normal.text-section {
+    transition-delay: 0.3s; /* Delay the text animation */
+  }
+
+
+  /* Page Transitions */
+.page-container {
+  flex: 1;
+}
+
+.fadeIn {
+  animation: fadeIn 500ms ease-in;
+}
+
+.fadeOut {
+  animation: fadeOut 500ms ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Global Loader Styles */
+.fixed {
+  position: fixed;
+}
+

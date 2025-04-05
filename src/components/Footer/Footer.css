@@ -1,0 +1,90 @@
+/* Footer.css */
+.footer {
+    background: #8b0000;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer ul li {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer ul li:hover {
+    color: #e0c999;
+  }
+  
+  .footer__divider {
+    width: 1px;
+    background: #e0c999;
+    height: 1rem;
+    margin: 0 0.5rem;
+  }
+  
+  .contact-form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0c999;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #e0c999;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #e0c999;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #e0c999;
+    color: #8b0000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background: #e0c999;
+  }

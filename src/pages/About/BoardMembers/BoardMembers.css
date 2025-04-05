@@ -1,0 +1,244 @@
+
+
+.m-section {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.board-member{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 80px 0;
+}
+
+.member-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.board-member p{
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.member-info h3{
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+
+.over-hide {
+  overflow: hidden;
+}
+
+.padding-tb {
+  padding: 25px 0;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.m-checkbox:checked + label,
+.m-checkbox:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #8b0000;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  background-image: url('../../../assets/images/BoardMembers/Boss.webp');
+  animation: border-transform 6s linear infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.m-checkbox.scnd + label {
+  background-image: url('../../../assets/images/BoardMembers/im5.webp');
+}
+
+.m-checkbox.thrd + label {
+  background-image: url('../../../assets/images/BoardMembers/Anthoney.webp');
+}
+
+.m-checkbox.foth + label {
+  background-image: url('../../../assets/images/BoardMembers/Bild-PaaEkow.webp');
+}
+
+.m-checkbox.foth + label {
+  background-image: url('../../../assets/images/BoardMembers/Bild-PaaEkow.webp');
+}
+
+.m-checkbox.Mathias + label {
+  background-image: url('../../../assets/images/BoardMembers/im6.webp');
+}
+
+.m-checkbox.Secretary + label {
+  background-image: url('../../../assets/images/BoardMembers/Secretary.webp');
+}
+.m-checkbox:checked + label {
+  box-shadow: 0 8px 25px 0 rgba(16, 39, 112, 0.3);
+  transform: scale(1.3);
+  animation-play-state: running;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+.slider-height-padding {
+  padding-top: 390px;
+}
+
+.m-section ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.m-section ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  padding: 5px 20px 20px 20px;
+  margin: 0;
+  list-style: none;
+  height: 370px;
+  border: 5px solid #e0c999;
+  background-color: #8b0000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #e0c999;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16, 39, 112, 0.1);
+  transition: all 0.5s ease;
+}
+
+.m-section ul li:nth-child(1),.m-section ul li:nth-child(2),.m-section ul li:nth-child(3),.m-section ul li:nth-child(4) {
+  background-color: #8b0000;
+}
+
+
+
+
+
+.m-checkbox.frst:checked ~ ul li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+.m-checkbox.scnd:checked ~ ul li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+.m-checkbox.thrd:checked ~ ul li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+.m-checkbox.foth:checked ~ ul li:nth-child(4) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.m-checkbox.Mathias:checked ~ ul li:nth-child(5) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.m-checkbox.Secretary:checked ~ ul li:nth-child(6) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+
+
+
+.custom-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  .m-section ul li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  .m-section ul li {
+    height: 200px;
+  }
+}
