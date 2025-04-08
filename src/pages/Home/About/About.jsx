@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./About.css"; // Import the CSS file
-import hero from "../../../assets/images/silenthill1.webp";
+import hero from "../../../assets/images/silenthill.webp";
 
 const About = () => {
   let scroll = useRef();

@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
 import Title from "../../components/Title/Title";
+import hero1 from "../../assets/images/silenthill.webp";
+
 import hero2 from "../../assets/images/silenthill2.webp";
 import hero3 from "../../assets/images/silenthill3.webp";
 import hero4 from "../../assets/images/silenthill4.webp";
@@ -15,11 +17,7 @@ import Ambulance from "./Ambulance/Ambulance";
 const WhatWeDo = () => {
   const location = useLocation();
   useScrollToSection(180);
-  const images = [hero2, hero6, hero4, hero7, hero3, hero5];
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [location.pathname]);
+  const images = [hero1, hero2, hero6, hero4, hero7, hero3, hero5];
 
   return (
     <div>
@@ -27,9 +25,9 @@ const WhatWeDo = () => {
         header="Our Projects"
         subheader="At Silent Hill Foundation, we believe in the power of action. Our projects are designed to address critical needs in underserved communities, from healthcare and education to environmental sustainability.
 
-  Explore our initiatives and see how we are making a difference. From emergency ambulance services and health outreach programs to climate action and educational empowerment, every project is a step toward a better future.
+        Explore our initiatives and see how we are making a difference. From emergency ambulance services and health outreach programs to climate action and educational empowerment, every project is a step toward a better future.
 
-  Join us in our mission to create sustainable change and empower communities worldwide."
+        Join us in our mission to create sustainable change and empower communities worldwide."
         images={images}
       />
       <div>

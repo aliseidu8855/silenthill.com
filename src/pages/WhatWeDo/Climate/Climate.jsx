@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules"; // Removed Navigation
 import "swiper/css";
@@ -10,14 +10,43 @@ import Climate2 from "../../../assets/images/climate2.webp";
 import Climate3 from "../../../assets/images/climate3.webp";
 import Climate4 from "../../../assets/images/climate4.webp";
 
-
-
 const Climate = () => {
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fade-in-bottom-normal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger animation when 10% of the element is visible
+      },
+    );
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      elements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
   // Combine all images into one array for the larger slider
   const allImages = [Climate1, Climate2, Climate3, Climate4];
 
   return (
-    <div className="mx-2 px-4 mt-6 mb-2 2xl:px-80 lg:px-40 md:px-11">
+    <div
+      ref={scrollRef}
+      className="mx-2 px-4 mt-6 mb-2 2xl:px-80 lg:px-40 md:px-11"
+    >
       {/* Larger Image Slider */}
       <div className="mb-8 fade-in-bottom-normal">
         <Swiper
@@ -83,8 +112,7 @@ const Climate = () => {
                 title: "Pollution",
                 description:
                   "Air, water, and soil pollution are major environmental issues affecting communities worldwide.",
-                impact:
-                  "Harms human health, wildlife, and natural resources.",
+                impact: "Harms human health, wildlife, and natural resources.",
               },
               {
                 title: "Climate Change",
@@ -149,8 +177,7 @@ const Climate = () => {
                 title: "Waste Management Initiatives",
                 solution:
                   "Implementing recycling programs and waste-to-energy projects to reduce landfill waste.",
-                impact:
-                  "Minimizes pollution and promotes a circular economy.",
+                impact: "Minimizes pollution and promotes a circular economy.",
               },
               {
                 title: "Climate Education Campaigns",

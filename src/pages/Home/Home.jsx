@@ -11,6 +11,7 @@ import hero4 from "../../assets/images/silenthill4.webp";
 import hero5 from "../../assets/images/silenthill5.webp";
 import hero6 from "../../assets/images/airplane2.webp";
 import hero7 from "../../assets/images/airplane3.webp";
+import hero1 from "../../assets/images/silenthill.webp";
 import photo from "../../assets/images/hero6.webp";
 import { useLocation } from "react-router-dom";
 import useScrollToSection from "../../components/SectionScroll/useScrollToSection";
@@ -19,7 +20,7 @@ const Home = () => {
   const location = useLocation();
   useScrollToSection(180);
 
-  const images = [hero2, hero6, hero4, hero7, hero3, hero5];
+  const images = [hero1, hero2, hero6, hero4, hero7, hero3, hero5];
 
   useEffect(() => {
     window.scrollTo(0, 0);

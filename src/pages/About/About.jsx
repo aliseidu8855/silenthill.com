@@ -5,6 +5,8 @@ import Hero from "../../components/Hero/Hero";
 import AboutUs from "./AboutUs/AboutUs";
 import BoardMembers from "./BoardMembers/BoardMembers";
 import Responsibilities from "./Responsibilities/Responsibilities";
+import hero1 from "../../assets/images/silenthill.webp";
+
 import hero2 from "../../assets/images/silenthill2.webp";
 import hero3 from "../../assets/images/silenthill3.webp";
 import hero4 from "../../assets/images/silenthill4.webp";
@@ -17,7 +19,7 @@ import useScrollToSection from "../../components/SectionScroll/useScrollToSectio
 const AboutPage = () => {
   const location = useLocation();
   useScrollToSection(100);
-  const images = [hero2, hero6, hero4, hero7, hero3, hero5];
+  const images = [hero1, hero2, hero6, hero4, hero7, hero3, hero5];
 
   useEffect(() => {
     window.scrollTo(0, 0);
