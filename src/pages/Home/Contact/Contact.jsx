@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import "./Contact.css"; // Import the CSS file
+import "./Contact.css"; 
 import ContactMail from "@mui/icons-material/ContactMail";
 import Call from "@mui/icons-material/Call";
 import LocationOn from "@mui/icons-material/LocationOn";
